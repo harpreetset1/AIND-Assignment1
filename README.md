@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: Constraint propagation can be used by looping for all the instances of boxes within a unit whose values are the same. Then fixing those cells we update rest of the cells in the unit by replacing the digits that twin value has.  
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: All we need to do here is add another dimension in the unitlist object. This dimension is diagonals of the grid
 
 ### Install
 
@@ -31,7 +31,7 @@ If not, please see how to download pygame [here](http://www.pygame.org/download.
 
 ### Visualizing
 
-To visualize your solution, please only assign values to the values_dict using the ```assign_values``` function provided in solution.py
+To visualize your solution, please only assign values to the values_dict using the ```assign_values``` function provided in function.py
 
 ### Data
 
