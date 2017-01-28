@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: Constraint propagation can be used by looping for all the instances of boxes within a unit whose values are the same. Then fixing those cells we update rest of the cells in the unit by replacing the digits that twin value has.  
+A: Naked Twins in the grid can be identified where a unit (row/ column/ 3x3 box) has 2 boxes with the same possibility of missing values. Either of the 2 values can be applied to either of the boxes. We can use the value of these twins as constraint and eliminate these 2 options from other missing values within a unit.        
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: All we need to do here is add another dimension in the unitlist object. This dimension is diagonals of the grid
+A: All we need to do here is add another dimension in the unitlist object. This dimension is diagonals of the grid. While processing the grid we iterate through each unit type (row/ column/ 3x3 box) to see that a unit shouldnt have ant of the 1-9 values repeating. These unit types act as constraints for finding out the values. By adding diagonals as another unit type we can add that constraint and while finding out the values we end up getting non repeating values in 9 boxes of diagonal. 
 
 ### Install
 
