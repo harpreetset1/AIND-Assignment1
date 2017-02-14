@@ -2,10 +2,12 @@
 ## Sudoku Solver
 This project is about an agnet that can resolve any type of Sudoku. It makes use of the algorithm called "Constraint Propogation". Constraint Propogation is useful to prune the possible options available by fixing a few variables while processing the other. This agent is tuned to solve Sudoku diagonally as well. 
 Strategies used in the code are:
+```
 1. Only choice
 2. Elimination
 3. Naked Twins
 4. Search trees
+```
 
 ### Install
 
